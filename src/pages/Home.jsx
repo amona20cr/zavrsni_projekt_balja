@@ -1,7 +1,8 @@
 import React from "react";
+import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { tours } from "../data/tours";
-import Banner from "../components/Banner";
+
 
 export default function Home() {
     const featured = [...tours].slice (0,3);
