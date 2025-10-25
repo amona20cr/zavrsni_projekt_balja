@@ -1,0 +1,24 @@
+
+.footer {
+    background-color: var(--primary);
+    color: white;
+    margin-top: 24px;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+}
+.footer-nav a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
