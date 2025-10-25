@@ -1,0 +1,67 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary);
+    color: white;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: 0.5 px;
+}
+
+.nav {
+    display: flex;
+    gap: 16 px;
+} 
+
+.nav a {
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 7px;
+}
+
+.nav a.active, .nav a:hover {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.travel-logo  {
+    display: none;
+    background-color: var(--primary);
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 786px) {
+    .travel-logo {
+        display:block;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        right: 4%;
+        top: 56px;
+        background-color: var(--primary);
+        flex-direction: column;
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+    }
+
+    .nav.open {
+        display: flex;
+    }
+}
