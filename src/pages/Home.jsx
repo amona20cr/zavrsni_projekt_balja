@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { tours } from "../data/tours";
+import Banner from "../components/Banner";
 
 export default function Home() {
     const featured = [...tours].slice (0,3);
 
     return (
         <section className="home">
+            <Banner />
             <div className="hero container">
                 <h1>Dobrodosli u našu Putničku agenciju!</h1>
                 <p>Najbolja ponuda izleta i avantura</p>
