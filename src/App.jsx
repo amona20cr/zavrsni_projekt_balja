@@ -5,6 +5,9 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Tours from "./pages/Tours";
 import Categories from "./pages/Categories";
+import ToursDetails from "./pages/ToursDetails";
+import { tours } from "./data/tours";
+
 
 export default function App(){
   return (
@@ -14,6 +17,7 @@ export default function App(){
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tours" element={<Tours />} />
+          <Route path="/tours/:id" element={<ToursDetails />} />
           <Route path="/categories" element={<Categories />} />
         </Routes>
       </main>

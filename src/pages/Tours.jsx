@@ -1,6 +1,7 @@
-import React, { useMemo, useState } from "react";
-import { tours } from "../data/tours";
+import React, { useMemo, useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import ToursCard from "../components/ToursCard";
+import { tours } from "../data/tours";
 import "./Tours.css"
 import Banner from "../components/Banner";
 
@@ -20,6 +21,32 @@ export default function Tours() {
   const [category, setCategory] = useState("Svi");
   const [price, setPrice] = useState("Sve");
   const [sort, setSort] = useState("price-asc");
+  const [searchParams, setSearchParams] = useSearchParams();
+
+
+  useEffect(()=> {
+    const urlCat = decodeURIComponent(searchParams.get("category"));
+    const urlQuery = decodeURIComponent(searchParams.get("query"));
+    const urlPrice = decodeURIComponent(searchParams.get("price"));
+    const urlSort = decodeURIComponent(searchParams.get("sort"));
+
+    if (urlCat && urlCat !="null") setCategory(urlCat);
+    if (urlQuery && urlQuery != "null") setQuery(urlQuery);
+    if (urlPrice && urlPrice != "null") setPrice(urlPrice);
+    if (urlSort && urlPrice != "null") setSort(urlSort);
+
+  }, [])
+
+  useEffect(()=> {
+    let params = {};
+    if (category) params.category = category;
+    if(query) params.query = query;
+    if(price) params.price= price;
+    if(sort) params.sort = sort;
+
+    setSearchParams(params, {replace:true});
+
+  }, [query, category, price, sort])
 
   // filtriranje i sortiranje
   const filtered = useMemo(() => {
