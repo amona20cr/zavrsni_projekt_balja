@@ -8,12 +8,11 @@ export default function Home() {
     const featured = [...tours].slice (0,3);
 
     return (
-        <section className="home">
-            <Banner />
-            <div className="hero container">
-                <h1>Dobrodosli u našu Putničku agenciju!</h1>
-                <p>Najbolja ponuda izleta i avantura</p>
-            </div> 
+        <>
+            <Banner
+  title="Dobrodošli u Travel Agency"
+ />
+            <section className="home">
                 <div className="container" style={{display: "flex", gap: 15, marginTop: 15}} >
                     <Link to="/tours" className="btn">Pregledaj ture</Link>
                     <Link to="/contact" className="btn" style={{background: "var(--primary-900)"}}>Kontakt</Link>
@@ -27,5 +26,6 @@ export default function Home() {
                     </div>
                 </div>
         </section>
+        </>
     );
 }

@@ -1,8 +1,6 @@
-
 .footer {
     background-color: var(--primary);
     color: white;
-    margin-top: 24px;
 }
 
 .footer-inner {
