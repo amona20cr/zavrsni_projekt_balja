@@ -1,0 +1,27 @@
+.accordion-item {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--card);
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    width: 100%;
+    text-align: left;
+    padding: 12px 14px;
+    border: none;
+    background: white;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.accordion-content {
+    padding: 12px 14px;
+    background: white;
+}

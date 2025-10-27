@@ -20,7 +20,7 @@ export default function Header () {
                     <NavLink to="/contacts"className={({isActive})=> {isActive ? "active" : ""}}>Kontakt</NavLink>
                     <NavLink to="/categories"className={({isActive})=> {isActive ? "active" : ""}}>Kategorije</NavLink>
                     <NavLink to="/tours"className={({isActive})=> {isActive ? "active" : ""}}>Izleti</NavLink>
-                    <NavLink to="/fqa"className={({isActive})=> {isActive ? "active" : ""}}>F.Q.A</NavLink>
+                    <NavLink to="/faq"className={({isActive})=> {isActive ? "active" : ""}}>FAQ</NavLink>
                 </nav>
             </div>
         </header>

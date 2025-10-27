@@ -10,7 +10,7 @@ export default function Footer () {
                 <nav className="footer-nav">
                     <NavLink to="/" className={({isActive})=> {isActive ? "active" : ""}}>Naslovnica</NavLink>
                     <NavLink to="/kontakt" className={({isActive})=> {isActive ? "active" : ""}}>Kontakt</NavLink>
-                     <NavLink to="/faq" className={({isActive})=> {isActive ? "active" : ""}}>F.A.Q</NavLink>
+                     <NavLink to="/faq" className={({isActive})=> {isActive ? "active" : ""}}>FAQ</NavLink>
                 </nav>
             </div>
         </footer>
