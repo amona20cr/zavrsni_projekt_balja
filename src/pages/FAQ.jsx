@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Banner from "../components/Banner";
 import Accordion from "../components/Accordion";
+import Image2 from "../assets/image2.jpg"
 
 const faqs = [
     {question: "Kako rezervirati izlet?", answer: "Izlet mozete rezervirati pozivom ili kontakt formom preko naše stranice."},
@@ -15,7 +16,7 @@ export default function FAQ() {
 
     return (
       <>
-        <Banner title="F.A.Q" />
+        <Banner title="F.A.Q" image={Image2}/>
 
         <section className="faq container">
           <h1>Često postavljena pitanja</h1>

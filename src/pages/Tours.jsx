@@ -4,6 +4,7 @@ import ToursCard from "../components/ToursCard";
 import { tours } from "../data/tours";
 import "./Tours.css"
 import Banner from "../components/Banner";
+import Image5 from "../assets/image5.jpg"
 
 const sorts = [
   { value: "price-asc", label: "Cijena ↑" },
@@ -66,7 +67,7 @@ export default function Tours() {
 
   return (
     <>
-    <Banner title="Izleti" />
+    <Banner title="Izleti" image={Image5} />
     <section className="tours container">
       <h1>Putovanja</h1>
 

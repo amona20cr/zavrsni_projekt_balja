@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { tours } from "../data/tours";
 import "../components/ToursCard.css";
 import image1 from "../assets/image1.jpg";
+import image4 from "../assets/image4.jpg";
 import Banner from "../components/Banner";
 
 export default function Categories() {
@@ -12,7 +13,7 @@ export default function Categories() {
     <>
   
       <Banner
-        title="Kategorije putovanja"/>
+        title="Kategorije putovanja" image={image4}/>
         <div className="kategorije container">
             <h1>Kategorije izleta</h1>
             </div>

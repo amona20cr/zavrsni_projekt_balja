@@ -1,9 +1,9 @@
 import React from "react";
-import hero from "../assets/image1.jpg";
+import defaultImage from "../assets/image1.jpg";
 
 export default function Banner({ title, subtitle, image }) {
   // koristi sliku iz propsa ako je poslana, inače default (hero)
-  const background = image || hero;
+  const background = image || defaultImage;
 
   return (
     <section
