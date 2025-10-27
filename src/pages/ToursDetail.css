@@ -1,0 +1,9 @@
+.tours-details .tour-image {
+  width: 100%;          /* 🔹 po cijeloj širini containera */
+  height: 40vh;         /* 🔹 pola visine ekrana */
+  object-fit: cover;    /* 🔹 zadrži proporcije i isječe višak */
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  margin: 20px 0;
+  display: block;
+}
