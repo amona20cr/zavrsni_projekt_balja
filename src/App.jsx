@@ -7,7 +7,7 @@ import Tours from "./pages/Tours";
 import Categories from "./pages/Categories";
 import ToursDetails from "./pages/ToursDetails";
 import { tours } from "./data/tours";
-
+import About from "./pages/About";
 
 export default function App(){
   return (
@@ -19,6 +19,7 @@ export default function App(){
           <Route path="/tours" element={<Tours />} />
           <Route path="/tours/:id" element={<ToursDetails />} />
           <Route path="/categories" element={<Categories />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
       <Footer />
