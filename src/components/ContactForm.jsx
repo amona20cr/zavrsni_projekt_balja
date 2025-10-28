@@ -68,6 +68,7 @@ export default function ContactForm() {
   };
 
   return (
+    <>
     <form className="contact-form" onSubmit={handleSubmit}>
       <div className="field">
         <label htmlFor="name">Ime i prezime</label>
@@ -170,5 +171,16 @@ export default function ContactForm() {
 
       <button type="submit" className="btn">Pošalji</button>
     </form>
+  
+    <div>
+      <h2>Podaci</h2>
+      <p>Email: info@travel-agency.example</p>
+      <p>Telefon: +385 91 000 0025</p>
+      <p>Adresa: Ulica grada Yorka 58D</p>
+      <p>Radno vrijeme: po dogovoru.</p>
+    </div>
+    </>
   );
 }
+
+

@@ -10,9 +10,7 @@ export default function Home() {
 
     return (
         <>
-            <Banner
-  title="Dobrodošli u Travel Agency"
- />
+            <Banner title="Dobrodošli u Travel Agency"/>
             <section className="home">
                 <div className="container" style={{display: "flex", gap: 15, marginTop: 15}} >
                     <Link to="/tours" className="btn">Pregledaj ture</Link>

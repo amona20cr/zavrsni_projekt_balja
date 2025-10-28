@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 20px 0;
 }
 
 .logo {
@@ -21,7 +21,7 @@
     letter-spacing: 0.5 px;
 }
 
-.nav {
+.nav.open {
     display: flex;
     gap: 16 px;
 } 
@@ -36,6 +36,7 @@
     background: rgba(255, 255, 255, 0.20);
 }
 
+
 .travel-logo  {
     display: none;
     background-color: var(--primary);
@@ -45,6 +46,16 @@
     cursor: pointer;
 }
 
+
+
+@media (max-width: 768px) {
+  .travel-logo {
+    display: inline-flex; /* vidi se samo na mobitelu */
+    align-items: center;
+    justify-content: center;
+  }
+
+}
 @media screen and (max-width: 786px) {
     .travel-logo {
         display:block;

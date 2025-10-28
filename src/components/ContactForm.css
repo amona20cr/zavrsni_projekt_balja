@@ -9,6 +9,11 @@
     flex-direction: column;
     gap: 7px;
 }
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
 
 label {
     font-weight: bold;

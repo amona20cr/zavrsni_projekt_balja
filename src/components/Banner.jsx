@@ -9,7 +9,7 @@ export default function Banner({ title, subtitle, image }) {
     <section
       style={{
         width: "100vw",
-        height: "340px",
+        height: "350px",
         marginLeft: "calc(50% - 50vw)",
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",

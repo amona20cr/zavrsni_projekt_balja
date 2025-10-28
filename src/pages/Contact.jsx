@@ -10,9 +10,12 @@ export default function Contact() {
 
         <section className="contact container">
             <h1>Kontakt</h1>
-            <p className="muted"> Imate pitanja? Javite se.</p>
+            <p className="muted"> Imate pitanja. Tu smo za Vas, javite se.</p>
         <ContactForm/></section></>
+
+        
     )
 }
+
 
 
