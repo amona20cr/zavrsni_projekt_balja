@@ -16,7 +16,7 @@ export default function Home() {
             <section className="home">
                 <div className="container" style={{display: "flex", gap: 15, marginTop: 15}} >
                     <Link to="/tours" className="btn">Pregledaj ture</Link>
-                    <Link to="/contact" className="btn" style={{background: "var(--primary-900)"}}>Kontakt</Link>
+                    <Link to="/contacts" className="btn" style={{background: "var(--primary-900)"}}>Kontakt</Link>
                 </div>
                 <div className="container">
                     <h2>Izdvojeni izleti</h2>

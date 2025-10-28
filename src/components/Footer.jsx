@@ -9,7 +9,7 @@ export default function Footer () {
                 <p>{new Date (). getFullYear()} Putnička agencija. Sva prava pridržana.</p>
                 <nav className="footer-nav">
                     <NavLink to="/" className={({isActive})=> {isActive ? "active" : ""}}>Naslovnica</NavLink>
-                    <NavLink to="/kontakt" className={({isActive})=> {isActive ? "active" : ""}}>Kontakt</NavLink>
+                    <NavLink to="/about" className={({isActive})=> {isActive ? "active" : ""}}>O nama</NavLink>
                      <NavLink to="/faq" className={({isActive})=> {isActive ? "active" : ""}}>FAQ</NavLink>
                 </nav>
             </div>

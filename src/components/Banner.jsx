@@ -2,7 +2,7 @@ import React from "react";
 import defaultImage from "../assets/image1.jpg";
 
 export default function Banner({ title, subtitle, image }) {
-  // koristi sliku iz propsa ako je poslana, inače default (hero)
+
   const background = image || defaultImage;
 
   return (
@@ -22,7 +22,7 @@ export default function Banner({ title, subtitle, image }) {
         color: "#fff",
       }}
     >
-      {/* Tamni sloj preko slike */}
+     
       <div
         style={{
           position: "absolute",

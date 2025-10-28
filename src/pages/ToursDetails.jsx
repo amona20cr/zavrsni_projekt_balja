@@ -33,7 +33,7 @@ export default function ToursDetails() {
 
       <h1>{tour.title}</h1>
 
-      {/* ✅ DODANO: samo klasa, bez inline stila */}
+     
       <img src={tour.image} alt={tour.title} className="tour-image" />
 
       <p className="muted">
@@ -79,3 +79,4 @@ export default function ToursDetails() {
     </section>
   );
 }
+

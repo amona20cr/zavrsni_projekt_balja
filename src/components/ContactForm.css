@@ -1,0 +1,38 @@
+.contact-form {
+    display: grid;
+    gap: 12px;
+    max-width: 520px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea, input:not([type="checkbox"]) {
+    padding: 10px;
+    border:1px solid var(--border);
+    border-radius: 8px;
+    background-color: white;
+}
+
+textarea {
+    min-height: 140px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+input.field-error, select.field-error, textarea.field-error {
+    border: 1px solid red;
+}
+
+
+
